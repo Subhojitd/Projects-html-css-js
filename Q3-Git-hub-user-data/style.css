@@ -1,0 +1,101 @@
+/* styles.css */
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    background-color: #5d48e8;
+    font-family: 'Poppins', sans-serif;
+}
+.container {
+    text-align: center;
+    margin-top: 100px;
+    background-color: #1e194d;
+    border-radius: 5px;
+    padding: 15px;
+    color: #ffff;
+
+  }
+  .input-container {
+    background-color: #ffff;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    font-size: 16px;
+  }
+  
+  button {
+    padding: 12px 20px;
+    background-color: #1e194d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  #avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 20%;
+    margin-top: 20px;
+  }
+  
+  #name {
+    margin-top: 20px;
+  }
+
+  /* GRID */
+  .info-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2px;
+    color: #ffff;
+  }
+  
+  .info-container h2,
+  .info-container p {
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: #5d48e8;
+
+  }
+  
+  #name {
+    grid-column: 1 / span 2;
+  }
+  
+  #location {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  
+  #portfolio {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  
+  #repositories {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  
+  #followers {
+    grid-column: 2;
+    grid-row: 3;
+  }
+  
+  #bio {
+    grid-column: 1 / span 2;
+    grid-row: 4;
+  }
+    

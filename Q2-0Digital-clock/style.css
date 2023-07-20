@@ -1,0 +1,44 @@
+/* styles.css */
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    background-color: #3a378d;
+  }
+  h1{
+    font-size: 100px;
+    color: #1d1c48 ;
+  }
+  
+  .clock-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #676dde;
+    color: #ffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  h4{
+    margin-top: 0;
+    font-weight: 400;
+  }
+  .timeContainer{
+    margin: 20px;
+    font-size: 20px
+  }
+  #hour{
+    font-size: 50px;
+  }
+  #minute{
+    font-size: 50px;
+  }
+  #second{
+    font-size: 50px;
+  }
+  
+  

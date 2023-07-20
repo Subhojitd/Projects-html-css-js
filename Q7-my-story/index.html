@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story-Preview</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="form-section">
+      <h2>Publish a Story</h2>
+      <form id="story-form">
+        <label for="title">Title of the Story:</label>
+        <input type="text" id="title" placeholder="Title of the story" oninput="updatePreview()">
+
+        <label for="image-url">Image URL:</label>
+        <input type="text" id="image-url" placeholder="Image URL" oninput="updatePreview()">
+
+        <label for="author-name">Author Name:</label>
+        <input type="text" id="author-name" placeholder="Enter author name" oninput="updatePreview()">
+
+        <label for="category">Category:</label>
+        <input type="text" id="category" placeholder="Category" oninput="updatePreview()">
+
+        <label for="description">Story Description:</label>
+        <textarea id="description" placeholder="Enter story description" oninput="updatePreview()"></textarea>
+      </form>
+      <button class="submit">Submit my story</button>
+    </div>
+
+    <div class="live-preview-section">
+      <div id="live-preview">
+        <img id="preview-image" src="" alt="Preview Image">
+        <div class="info">
+            <h3 id="preview-title"></h3>
+            <p id="preview-description"></p>
+            <p id="preview-author"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

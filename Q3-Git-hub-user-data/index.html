@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Github User Finder</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>Github User Finder</h1>
+    <div class="input-container">
+      <input type="text" id="username-input" placeholder="Enter GitHub username">
+      <button onclick="fetchUserData()">Search</button>
+    </div>
+    <div id="user-info" class="hidden">
+        <img id="avatar" src="" alt="User Avatar">
+        <div class="info-container">
+            <h2 id="name"></h2>
+            <p id="location"></p>
+            <p id="portfolio"></p>
+            <p id="repositories"></p>
+            <p id="followers"></p>
+            <p id="bio"></p>
+        </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

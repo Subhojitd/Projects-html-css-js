@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo-App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header >
+        <h1>Todo - App</h1>
+        <form id="form" action="">
+            <input id="input-box" type="text" placeholder="Enter your todo">
+            <button id="addBtn" onclick="addTask()" type="submit">Add todo</button>
+        </form>
+    </header>
+
+    <ul id="task-list">
+        
+    </ul>
+
+    
+    <div id="edit-modal" class="modal">
+        <div class="modal-content">
+          <h2>Edit Task</h2>
+          <form id="edit-form">
+            <input type="text" id="edit-input" placeholder="Enter updated task">
+            <div class="modal-buttons">
+              <button id="update" type="submit">Update</button>
+              <button type="button" class="close-button">Close</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

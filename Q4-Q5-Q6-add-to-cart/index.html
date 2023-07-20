@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Listing</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Product Listing</h1>
+      <div class="shopping">
+        <img src="shopping-bag.png" alt="">
+        <span quantitiy>0</span>
+      </div>
+    </header>
+    <div class="list"></div>
+  </div>
+  <div class="card">
+    <h1>My Cart</h1>
+    <ul class="listCard"></ul>
+    <div class="checkout">
+      <div class="total"> 0</div>
+      <div class="closeShopping">Close</div>
+    </div>
+  </div>
+
+  <!-- The modal -->
+  <div id="productModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class="mainContent">
+        <img class="product-image" src="" alt="">
+      <div class="mainContent-2">
+        <h4 class="product-title"></h4>
+        <p class="product-price"></p>
+        <button class="buynow">Buy Now</button>
+      </div>
+        
+      </div>
+      <!-- Add additional HTML elements as needed for displaying the product details -->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
